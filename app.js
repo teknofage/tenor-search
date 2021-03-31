@@ -19,6 +19,7 @@ const app = express();
 const exphbs  = require('express-handlebars');
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.use(express.static('public'));
 app.set('view engine', 'handlebars');
 
 // Routes
