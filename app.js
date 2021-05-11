@@ -7,7 +7,7 @@ require('dotenv').config();
 const TENOR_API_KEY = process.env.TENOR_API_KEY;
 
 const Tenor = require("tenorjs").client({
-  "Key": M5POTFDWABIT, // https://tenor.com/developer/keyregistration
+  "Key": "M5POTFDWABIT", // https://tenor.com/developer/keyregistration
   "Filter": "high", // "off", "low", "medium", "high", not case sensitive
   "Locale": "en_US", // Your locale here, case-sensitivity depends on input
 });
